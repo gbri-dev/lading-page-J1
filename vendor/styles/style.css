@@ -1,0 +1,11 @@
+* {
+  font-family: sans-serif;
+  font-size: large;
+}
+
+code {
+  background-color: rgba(255, 174, 71, 0.5);
+  margin: 0 10px 0 8px;
+  padding: 10px;
+  display: block;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletores de elementos do DOM</title>
+  <link rel="stylesheet" href="./vendor/styles/style.css">
+  <style>
+    .informa {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Formas de Selecionar elementos no DOM</h1>
+
+  <p>Código de exemplo:</p>
+  <code>let titulos = document.querySelectorAll('h4')</code>
+  <br />
+  <!--Percorrer todos os títulos h4 da página-->
+  <code>for(let i = 0; i < titulos.length; i++)
+    { titulos[i].textContent = "Meu Título H4"}</code>
+  <h4>Primeiro</h4>
+  <h4>Segundo</h4>
+  <h4>Terceiro</h4>
+
+  <p>Agora vamos fazer o mesmo exemplo anterior usando apenas jQuery:</p>
+  <code>jQuery('h4').text('Prático e rápido')</code>
+
+  <p>Podemos também usar um padrão no jQuery para abreviar sua escrita:</p>
+  <code>jQuery( function($){
+      /**/  
+  })</code>
+
+  <p>Exemplo Logo</p>
+  <h1 class="Titulo">WEBGCS</h1>
+
+  <div class="informa">
+    <p>Entre no Site para conhecer mais sobre os seletores:</p>
+  </div>
+  <a href="api.jquery.com/category/selectors"></a>
+
+
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/jquery/custom.js"></script>
+</body>
+
+</html>
